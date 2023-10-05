@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Top</title>
+		<link rel="stylesheet" href="title.css">
+		<link rel="stylesheet" type="text/css" href="top.css" />
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				text-decoration: none;
+				list-style-type: none;
+			}
+		</style>
+		<script src="js/main.js"></script>
+	</head>
+	<body>
+		<header>
+			<div id="nav">
+				<ul>
+					<li id="in"><a href="top.html">首页</a></li>
+					<li><a href="hiragana.html">五十音图</a></li>
+					<li><a href="map.html">日本概况</a></li>					
+					<li><a href="ryuugaku.html">日本留学</a></li>
+					<li><a href="nihonryouri.html">日本料理</a></li>
+					<li>
+						<div id="showtime"></div>
+					</li>
+					<li><img src="img/logo.gif"></li>
+				</ul>
+			</div>
+			<div id="zu">
+				<div>
+					<a href="#"><img src="img/zuojiantou.png" id="zuojiantou"></a>
+				</div>
+				<div>
+					<img src="img/b-ad1.jpg" id="keshiki">
+				</div>
+				<div>
+					<a href="#"><img src="img/youjiantou.png" id="youjiantou"></a>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<!-- 简介 -->
+			<div id="jianjie" class="module">
+				<div id="lead-box">
+					<img src="img/kana.jpg" alt="假名表">
+					<div>
+						<p style="text-indent:2em;">日语里有3种文字：平假名、片假名、汉字。其中，平假名和片假名是表音文字，一个文字就是一个音节。让我们先来学习假名，迈出读写日语的第一步吧。</p>
+						<div>
+							<a href="hiragana.html" alt="開始"><img src="img/logo.gif"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- 课程 -->
+			<div id="module1" class="module">
+				<h2 class="title ai_title">日语课程 <span>免费试听</span></h2>
+				<ul class="module1-nav">
+					<li class="" id="active0" onclick="bianhuan(0)">零基础在线课</li>
+					<li class="active" id="active1" onclick="bianhuan(1)">实用口语在线课</li>
+					<li class="" id="active2" onclick="bianhuan(2)">商务日语在线课</li>
+					<li class="" id="active3" onclick="bianhuan(3)">外教在线1对1课</li>
+				</ul>
+				<div id="m0" class="module1-info active">
+					<div class="module1-info-lt fl">
+						<img src="https://static.meten.com/web/ai/images/module113/module113-img01.jpg" alt="">
+					</div>
+					<div class="module1-info-rt fr">
+						<div class="people">
+							<div class="people-lt fl">适合人群</div>
+							<div class="people-rt fl">日语零基础、基础比较薄弱<br>用闲暇时间学习充电以备将来不时之需</div>
+						</div>
+						<div class="type">
+							<div class="type-lt fl">班 型</div>
+							<div class="type-rt fl">1V1VIP小班：在线互动 私人课堂<br>1V4在线小班：多向沟通 互动讨论</div>
+						</div>
+						<div class="price">
+							<div class="now fl">
+								¥<strong>0</strong><span>原价<em>450元</em></span>
+							</div>
+							<div class="btn fl">在线免费试听</div>
+						</div>
+					</div>
+				</div>
+				<div id="m1" class="module1-info">
+					<div class="module1-info-lt fl">
+						<img src="https://static.meten.com/web/ai/images/module113/module113-img02.jpg" alt="">
+					</div>
+					<div class="module1-info-rt fr">
+						<div class="people">
+							<div class="people-lt fl">适合人群</div>
+							<div class="people-rt fl">想在日语交流场合提升对话<br>想与外籍客户或伙伴能流畅交流</div>
+						</div>
+						<div class="type">
+							<div class="type-lt fl">班 型</div>
+							<div class="type-rt fl">1V1VIP小班：在线互动 私人课堂<br>1V4在线小班：多向沟通 互动讨论</div>
+						</div>
+						<div class="price">
+							<div class="now fl">
+								¥<strong>0</strong><span>原价<em>450元</em></span>
+							</div>
+							<div class="btn fl">在线免费试听</div>
+						</div>
+					</div>
+				</div>
+				<div id="m2" class="module1-info">
+					<div class="module1-info-lt fl">
+						<img src="https://static.meten.com/web/ai/images/module113/module113-img03.jpg" alt="">
+					</div>
+					<div class="module1-info-rt fr">
+						<div class="people">
+							<div class="people-lt fl">适合人群</div>
+							<div class="people-rt fl">想通过学习提高职场竞争力<br>接待外籍人士或出国外派</div>
+						</div>
+						<div class="type">
+							<div class="type-lt fl">班 型</div>
+							<div class="type-rt fl">1V1VIP小班：在线互动 私人课堂<br>1V4在线小班：多向沟通 互动讨论</div>
+						</div>
+						<div class="price">
+							<div class="now fl">
+								¥<strong>0</strong><span>原价<em>450元</em></span>
+							</div>
+							<div class="btn fl">在线免费试听</div>
+						</div>
+					</div>
+				</div>
+				<div id="m3" class="module1-info">
+					<div class="module1-info-lt fl">
+						<img src="https://static.meten.com/web/ai/images/module113/module113-img04.jpg" alt="">
+					</div>
+					<div class="module1-info-rt fr">
+						<div class="people">
+							<div class="people-lt fl">适合人群</div>
+							<div class="people-rt fl">对个性化学习要求较高<br>想跟外国人能达到顺畅交流</div>
+						</div>
+						<div class="type">
+							<div class="type-lt fl">班 型</div>
+							<div class="type-rt fl">1V1VIP小班：在线互动 私人课堂<br>1V4在线小班：多向沟通 互动讨论</div>
+						</div>
+						<div class="price">
+							<div class="now fl">
+								¥<strong>0</strong><span>原价<em>500元</em></span>
+							</div>
+							<div class="btn fl">在线免费试听</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- 推荐教材 -->
+			<div id="jiaocai">
+				<h1 align="center">推荐教材</h1>
+				<div id="book1-box1">
+					<div id="box1">
+						<h2 align="center">新编日语教程</h2>
+						<div class="image-box">
+							<a href="https://www.baidu.com/s?wd=新编日语教程">
+								<img src="img/book1.jpg" alt="新编日语教程">
+							</a>
+						</div>
+						<div class="biaoqian">
+							<p><span>作者: </span>新世界图书事业部</p>
+							<p><span>出版社: </span>华东理工大学出版社</p>
+							<p><span>出版年: </span>2012-5-1</p>
+							<p><span>页数: </span>312</p>
+							<p><span>定价: </span>39.00元</p>
+						</div>
+						<div class="liaojiegengduo">
+							<a href="https://www.baidu.com/s?wd=新编日语教程">了解更多</a>
+						</div>
+					</div>
+					<div id="box1">
+						<h2 align="center">大家的日本语</h2>
+						<div class="image-box">
+							<a href="https://www.baidu.com/s?wd=大家的日本语">
+								<img src="img/book2.jpg" alt="大家的日本语">
+							</a>
+						</div>
+						<div class="biaoqian">
+							<p><span>作者: </span>日本 3A 出版社</p>
+							<p><span>出版社: </span>外语教学与研究出版社</p>
+							<p><span>出版年: </span>2017-5-1</p>
+							<p><span>页数: </span>349</p>
+							<p><span>定价: </span>48.00元</p>
+						</div>
+						<div class="liaojiegengduo">
+							<a href="https://www.baidu.com/s?wd=大家的日本语">了解更多</a>
+						</div>
+					</div>
+					<div id="box1">
+						<h2 align="center">新编日语</h2>
+						<div class="image-box">
+							<a href="https://www.baidu.com/s?wd=新编日语">
+								<img src="img/book3.jpg" alt="新编日语">
+							</a>
+						</div>
+						<div class="biaoqian">
+							<p><span>作者: </span>周平，陈小芬</p>
+							<p><span>出版社: </span>上海外语教育出版社</p>
+							<p><span>出版年: </span>2009-10-1</p>
+							<p><span>页数: </span>412</p>
+							<p><span>定价: </span>28.00元</p>
+						</div>
+						<div class="liaojiegengduo">
+							<a href="https://www.baidu.com/s?wd=新编日语">了解更多</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- 说明 -->
+			<div id="shuoming">
+				<div id="mokuai">
+					<div class="boxs">
+						<p>日本留学</p>
+						<div id="box11" class="evenflow">
+							<a href="ryuugaku.html"><img src="img/ryuugaku.jpg"></a>
+						</div>
+					</div>
+					<div class="boxs">
+						<p>日本概况</p>
+						<div id="box12">
+							<a href="map.html"><img src="img/chizu.jpg"></a>
+						</div>
+					</div>
+					<div class="boxs">
+						<p>日本交通</p>
+						<div id="box13">
+							<a href="javascript:void(0);"><img src="img/koutsuu.jpg"></a>
+						</div>
+					</div>
+					<div class="boxs">
+						<p>日本旅游</p>
+						<div id="box14">
+							<a href="javascript:void(0);"><img src="img/ryokou.jpg"></a>
+						</div>
+					</div>
+					<div class="boxs">
+						<p>日本料理</p>
+						<div id="box15">
+							<a href="javascript:void(0);"><img src="img/nihonryouri.jpg"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+
+		<div id="line1">
+			<div>
+				<h1>学习专栏</h1>
+			</div>
+		</div>
+		<div class="method">
+			<div class="method_left">
+				<a href="top.html" title="趣图助你掌握五十音" target="_blank">趣图助你掌握五十音</a>
+				<a href="top.html" title="一起来写あいうえお" target="_blank">一起来写あいうえお</a>
+				<a href="top.html" title="教你写好假名な行" target="_blank">教你写好假名な行</a>
+				<a href="top.html" title="教你写好假名た行" target="_blank">教你写好假名た行</a>
+				<a href="top.html" title="教你写好假名さ行" target="_blank">教你写好假名さ行</a>
+				<a href="top.html" title="教你写好假名か行" target="_blank">教你写好假名か行</a>
+				<a href="top.html" title="教你写好假名あ行" target="_blank">教你写好假名あ行</a>
+			</div>
+			<div class="method_center">
+				<a href="top.html" title="日语初级入门全能" target="_blank">日语初级入门全能</a>
+				<a href="top.html" title="零基础开口说日语" target="_blank">零基础开口说日语</a>
+				<a href="top.html" title="经典实用会话轻松学" target="_blank">经典实用会话轻松学</a>
+			</div>
+			<div class="method_right">
+				<a href="top.html" title="看日剧学日语" target="_blank">看日剧学日语</a>
+				<a href="top.html" title="看动漫学日语" target="_blank">看动漫学日语</a>
+			</div>
+		</div>
+		<div class="topic">
+			<div class="item">
+				<a href="" title="日语发音学习" target="_blank">日语发音学习</a>
+				<a href="" title="初级日语" target="_blank">初级日语</a>
+				<a href="" title="日语声调" target="_blank">日语声调</a>
+			</div>
+			<div class="item">
+				<a href="" title="用日语说流行语" target="_blank">用日语说流行语</a>
+				<a href="" title="日语能力考" target="_blank">日语能力考</a>
+				<a href="" title="日语口语" target="_blank">日语口语</a>
+			</div>
+			<div class="item">
+				<a href="" title="日语拟声词" target="_blank">日语拟声词</a>
+				<a href="" title="看动漫学日语" target="_blank">看动漫学日语</a>
+				<a href="" title="日语输入法" target="_blank">日语输入法</a>
+			</div>
+		</div>
+
+		<footer>
+			<div class="footer" align="center">
+				<div class="footer_main">
+					<div class="footer_left">
+						<span>
+							<p class="top1">关于我们</p>
+							<a href="" target="_blank" ga-location="首页" ga-type="按钮-关于我们" class="mt05">关于我们</a>
+							<a href="" target="_blank" ga-location="首页" ga-type="按钮-加入我们">加入我们</a>
+							<a href="" target="_blank" ga-location="首页" ga-type="按钮-媒体报道">媒体报道</a>
+							<a href="" target="_blank" ga-location="首页" ga-type="按钮-联系我们">联系我们</a>
+						</span>
+						<span>
+							<p class="top1">使用帮助</p>
+							<a href="" target="_blank" ga-location="首页" ga-type="按钮-帮助中心" class="mt05">帮助中心</a>
+							<a href="" target="_blank" ga-location="首页" ga-type="按钮-手机学习">手机学习</a>
+							<a href="" target="_blank" ga-location="首页" ga-type="按钮-使用协议">使用协议</a>
+							<a href="" target="_blank" ga-location="首页" ga-type="按钮-网站地图">网站地图</a>
+						</span>
+						<span>
+							<p class="top1">意见反馈</p>
+							<a href="#">合作邮箱：XXXXXXXXXXXXXX</a>
+							<a href="#">投诉邮箱：XXXXXXXXXXXXXX</a>
+							<a href="#">招聘邮箱：XXXXXXXXXXXXXX</a>
+						</span>
+					</div>
+					<div class="footer_right">
+						<span>
+							<a href="#">
+								<img src="logo/logo1.png">
+								APP
+							</a>
+						</span>
+						<span>
+							<a href="#">
+								<img src="logo/logo2.png">
+								客服
+							</a>
+						</span>
+						<span>
+							<a href="#">
+								<img src="logo/logo3.png">
+								微信
+							</a>
+						</span>
+						<span>
+							<a href="#">
+								<img src="logo/logo4.png">
+								微博
+							</a>
+						</span>
+						<span>
+							<a href="#">
+								<img src="logo/logo5.png">认证
+							</a>
+						</span>
+						<div id="xuke">
+							<p>© Copyright 20XX-20XX XXXX 版权所有 ICP证：XXX-20XXXXXX<img src="logo/110.png">公网安备 XXXXXXXXXXXXXX号</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

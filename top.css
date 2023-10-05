@@ -1,0 +1,384 @@
+/* 以下背景 */
+body {
+
+}
+/* 以上背景 */
+
+/* 轮播动图 */
+#zu{
+	margin-bottom: 10px;
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+	flex-flow:nowrap;
+}
+
+#keshiki{
+	border: whitesmoke solid 4px;
+	z-index: 0;
+	border-radius: 1px;
+}
+#zuojiantou{
+	margin-right: -39px;
+}
+#youjiantou{
+	margin-left: -39px;
+}
+#zuojiantou , #youjiantou{
+	width: 39px;
+	opacity: 0.3;
+	z-index: 1;
+	margin-top: 120px;
+}
+#zuojiantou:hover,#youjiantou:hover{
+	opacity: 1;
+}
+/* 轮播动图 */
+
+/* 以下简介 */
+#jianjie{
+    background: url(img/modulebg2.jpg) no-repeat;
+    position: relative;
+    padding: 10px 0 40px;
+	height: 451px;
+}
+#lead-box {
+    margin: 60px 100px;
+    padding: 10px;
+    background: url(img/bg_lead.png) 0 0 repeat;
+	display: flex;
+	flex-flow: row;
+	width: 800px;	
+}
+#lead-box  img {
+/*    float: left; */
+    width: 400px;
+    /* height: auto; */
+    margin: 0 30px 4px 0;
+/*    position: relative; */
+}
+#jianjie p {
+	color: dimgray;
+	font-size: 28px;
+	font-family: "微软雅黑";
+	text-align: left;
+	padding-bottom: 18px;
+	margin-bottom: 18px;
+}
+/* 以上简介 */
+
+/* 链接 */
+.method {
+	display: flex;
+	justify-content: center;
+	height: 330px;
+	background: url(img/xuexifangfa.jpg) center no-repeat;
+	padding-top: 66px;
+	margin-bottom: 10px;
+	position: relative;
+}
+.topic {
+	display: flex;
+	justify-content: center;
+	height: 180px;
+	padding-top: 66px;
+	background: url(img/xiangguanzhuanti.jpg) center no-repeat;
+	min-width: 1000px;
+}
+
+.method .method_left,.method .method_center, .method .method_right{
+	margin-left: 90px;
+	width: 200px;
+	top: 50px;
+}
+.method .method_left a ,.method .method_center a ,.method .method_right a{
+	height: 35px;
+	line-height: 35px;
+	/* 行高 */
+	padding-left: 15px;
+	background: url(img/jiantou.jpg) no-repeat 5px;
+	border-bottom: 1px dashed #81b16c;
+	display: block;
+	overflow: hidden;
+}
+
+.topic .item {
+	width: 250px;
+	margin-left: 80px;
+	float: left;
+	display: inline;
+	/* 不换行 */
+	font-size: 16px;
+}
+.topic .item a {
+	height: 45px;
+	line-height: 45px;
+	padding-left: 30px;
+	display: block;
+	padding-right: 5px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	background: url(img/fangkuai.jpg) no-repeat left 18px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+/* 说明 */
+#shuoming{
+	background: url(img/modulebg.jpg) no-repeat;
+	/* 	position: relative; */
+	width: 1200px;
+	height: 553px;
+	margin: 0 auto 10px;
+	justify-content: center;
+}
+#mokuai{
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	padding: 160px;
+}
+.boxs{
+	width: 200px;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.boxs:hover{
+	transform:translateX(10px) translateY(10px) scale(1.2,1.2);
+}
+
+.boxs p{
+	display: flex;
+	justify-content: center;
+	font-size: 27px;
+}
+#box14 img,#box11 img,#box12 img,#box13 img ,#box15 img{
+	width: 200px;
+	height: 280px;
+}
+#box11{	
+	background-color: #1A3F48;
+}
+#box12{
+	background-color: #DCF0F9;
+}
+#box13{
+	background-color: white;
+}
+#box14{
+	background-color: #F0EFED;
+}
+#box15{
+	background-color: #BBB9BA;
+}
+
+/* 说明 */
+
+/* 推荐教程 */
+#jiaocai {
+	background: url(img/modulebg2.jpg) no-repeat;
+/* 	position: relative; */
+	width: 1200px;
+	margin: 0 auto;
+	-webkit-box-shadow: 2px 2px 15px rgba(0,0,0,.2);
+	box-shadow: 2px 2px 15px rgba(0,0,0,.2);
+	padding: 50px 0 20px;
+}
+#book1-box1{
+	justify-content: center;
+	display: flex;
+	margin-top: 10px;
+}
+.image-box {
+	margin-top: 5px;
+	margin-left: 30px;
+	margin-right: 30px;
+	height: 300px;
+	width: 250px;
+	border: 1px solid black;
+	background-color: white;
+}
+.image-box img {
+	height: 300px;
+}
+.liaojiegengduo{
+	width: 188px;
+	height: 40px;
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	background: #fcfff7;
+	color: #86c138;
+	font-size: 16px;
+	text-align: center;
+	line-height: 37px;
+	margin-left: 60px;
+	margin-top: 10px;
+}
+/* 推荐教材 */
+
+
+/* 课程标题 */
+h2.title {
+    font-size: 34px;
+    font-weight: 700;
+    text-align: center;
+}
+h2.ai_title:after {
+    content: '';
+    width: 88px;
+    height: 63px;
+    display: inline-block;
+}
+.type {
+    padding: 20px 0 32px;
+    overflow: hidden;
+}
+.price {
+    overflow: hidden;
+}
+.now {
+    width: 160px;
+    height: 50px;
+    border: 1px solid #86c138;
+    border-radius: 5px;
+    background: #fcfff7;
+    color: #86c138;
+    font-size: 16px;
+    text-align: center;
+    line-height: 46px;
+    margin-right: 10px;
+}
+.btn {
+    width: 200px;
+    background: #86c138;
+    text-align: center;
+    height: 52px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.fl {
+    float: left;
+}
+/* 课程标题 */
+
+/* 课程内容 */
+.module {
+    width: 1200px;
+    margin: 0 auto 15px;
+    overflow: hidden;
+    background: #fff;
+    -webkit-box-shadow: 2px 2px 15px rgba(0,0,0,.2);
+    box-shadow: 2px 2px 15px rgba(0,0,0,.2);
+}
+#module1{
+    background: url(img/modulebg.jpg) no-repeat;
+    position: relative;
+    padding: 10px 0 40px;
+}
+.module1-nav {
+    width: 1100px;
+    margin: 35px auto 18px;
+    border-bottom: 3px solid #86c138;
+    overflow: hidden;
+}
+.module1-info {
+    display: none;
+    padding: 30px 40px;
+    width: 1020px;
+    margin: auto;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+.module1-info.active {
+    display: block;
+}
+.module1-nav li.active {
+    color: #fff;
+    background: #86c138;
+    font-weight: 700;
+}
+.people {
+    padding: 15px 0;
+    overflow: hidden;
+    border-bottom: 1px dashed #ddd;
+}
+.people-lt,.type-lt {
+    width: 95px;
+    color: #666;
+    font-size: 14px;
+}
+.people-rt,.type-rt {
+    color: #333;
+    font-size: 14px;
+}
+.module1-info {
+    display: none;
+    padding: 30px 40px;
+    width: 1020px;
+    margin: auto;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+.module1-nav li {
+    width: 240px;
+    height: 45px;
+    line-height: 45px;
+    float: left;
+    margin-right: 5px;
+    background: #eee;
+    color: #666;
+    text-align: center;
+    cursor: pointer;
+}
+.module1-info-rt {
+	float: right;
+    width: 545px;
+}
+/* 课程内容 */
+
+/* 线条 */
+#line1 div{
+	margin-top: -16px;
+	width: 160px;
+	background-color: white;
+}
+/* 线条 */
+
+/* 图片翻转 */
+.biaoqian{
+	display: none;
+	z-index: -1;
+	margin-top: -120px;
+	/* margin-left: 10px; */
+	font-size: 18px;
+	width: 250px;
+	margin-left: 30px;
+}
+#box1:hover .biaoqian{
+	display: block;
+}
+.biaoqian span{
+	color: coral;
+}
+.biaoqian p{
+	color: #808080;
+}
+#box1 .image-box{
+	transform: rotateY(0deg);
+	transform-origin: center center;
+	transition: 1s;
+	opacity: 1;
+	z-index: 1;
+}
+#box1:hover .image-box{
+	transform: rotateY(180deg);
+	transform-origin: center center;
+	opacity: 0.2;
+	z-index: 1;
+}
+/* 图片翻转 */

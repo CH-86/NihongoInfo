@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>五十音图</title>
+		<link rel="stylesheet" href="title.css">
+		<link rel="stylesheet" href="hiragana.css">
+		<script src="js/hiragana.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/title.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			* {
+				margin: 0;
+				text-decoration: none;
+				list-style-type: none;
+			}
+
+			#in {
+				background-color: #e10000;
+			}
+
+			#hira {
+				background-color: #39C5BB;
+			}
+		</style>
+		<script type="text/javascript">
+
+		</script>
+	</head>
+	<body>
+		<header>
+			<div id="nav">
+				<ul>
+					<li><a href="top.html">首页</a></li>
+					<li id="in"><a href="hiragana.html">五十音图</a></li>
+					<li><a href="map.html">日本概况</a></li>
+					<li><a href="ryuugaku.html">日本留学</a></li>
+					<li><a href="nihonryouri.html">日本料理</a></li>
+					<li>
+						<div id="showtime"></div>
+					</li>
+					<li><img src="img/logo.gif"></li>
+				</ul>
+			</div>
+		</header>
+
+
+		<div id="center">
+			<div id="jianjie">
+				<div id="jianjie1">
+					<img src="img/kana.jpg" alt="假名表">
+				</div>
+				<div id="jianjie2">
+					<div>
+						<p style="text-indent:2em;">日语里有3种文字：平假名、片假名、汉字。其中，平假名和片假名是表音文字，一个文字就是一个音节。让我们先来学习假名，迈出读写日语的第一步吧。</p>
+					</div>
+					<div>
+						<a href="hiragana.html" alt="開始"><img src="img/logo.gif"></a>
+					</div>
+
+					<div id="center">
+						<div class="kaete" id="hira">
+							<a href='#' onclick="hira_onclick()">平假名</a>
+						</div>
+						<div class="kaete" id="kata">
+							<a href='#' onclick="kata_onclick()">片假名</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<main>
+			<div id="main">
+				<div id="center">
+					<script type="text/javascript">
+						var gojyuuon = ["あ", "い", "う", "え", "お",
+							"か", "き", "く", "け", "こ",
+							"さ", "し", "す", "せ", "そ",
+							"た", "ち", "つ", "て", "と",
+							"な", "に", "ぬ", "ね", "の",
+							"は", "ひ", "ふ", "へ", "ほ",
+							"ま", "み", "む", "め", "も",
+							"や", "", "ゆ", "", "よ",
+							"ら", "り", "る", "れ", "ろ",
+							"わ", "", "", "", "を",
+							"ん"
+						]
+						var hatsuon = ["a", "i", "u", "e", "o",
+							"ka", "ki", "ku", "ke", "ko",
+							"sa", "shi", "su", "se", "so",
+							"ta", "chi", "tsu", "te", "to",
+							"na", "ni", "nu", "ne", "no",
+							"ha", "hi", "fu", "he", "ho",
+							"ma", "mi", "mu", "me", "mo",
+							"ya", "", "yu", "", "yo",
+							"ra", "ri", "ru", "re", "ro",
+							"wa", "", "", "", "wo",
+							"n"
+						]
+						document.write("<div id='gojyuuon'>");
+						document.write("<table cellpadding='27' bordercolor='#DE1660' border='2' >");
+						document.write("<p id='title'>五十音</p>");
+						for (i = 0; i < 10; i++) {
+							document.write("<tr>");
+							for (j = 0; j < 5; j++) {
+								document.write("<td class='effect-1' onclick='koe(" + (i * 5 + j) + ")' id='" + gojyuuon[i * 5 + j] + "'>");
+
+
+								var name = hatsuon[i * 5 + j];
+								if (name != "") {
+									document.write("<div class='image'>");
+									document.write("<video src='voice/" + hatsuon[i * 5 + j] + ".mp3' id='" + hatsuon[i * 5 + j] +
+										"' style='display: none;'></video>");
+									document.write("<img src='img/", name, ".gif' id='kanagif" + (i * 5 + j) + "'>");
+									document.write("</div>");
+								}
+
+
+								document.write("<div class='text1'><a href='javascript:void(0);' id='gojyuuon" + (i * 5 + j) + "'>" + gojyuuon[
+										i * 5 + j] +
+									"</a></div>");
+								document.write("<div class='text2'>" + hatsuon[i * 5 + j] + "</div>");
+								document.write("</td>");
+
+								function koe(num) {
+									if (gojyuuon[num] != '') {
+										var c = document.getElementById(gojyuuon[num]);
+										var m = document.getElementById(hatsuon[num]);
+										m.play();
+									}
+
+								}
+							}
+							document.write("</tr>");
+						}
+						document.write("<tr><td class='effect-1' onclick='koe(50)' id='" + gojyuuon[50] + "'><div class='image'>");
+						document.write("<video src='voice/" + hatsuon[50] + ".mp3' id='" + hatsuon[50] +
+							"' style='display: none;'></video>" + "<img src='img/n.gif' id='kanagif50'></div>");
+						document.write("<div class='text1' id='gojyuuon50'><a href='javascript:void(0);'>" + gojyuuon[50] +
+							"</a></div><div class='text2'>" + hatsuon[50] +
+							"</div></td></tr>");
+
+						document.write("</table>");
+						document.write("</div>");
+
+
+						var dakuon = ["が", "ぎ", "ぐ", "げ", "ご",
+							"ざ", "じ", "ず", "ぜ", "ぞ",
+							"だ", "ぢ", "づ", "で", "ど",
+							"ば", "び", "ぶ", "べ", "ぼ",
+							"ぱ", "ぴ", "ぷ", "ぺ", "ぽ",
+						]
+						var dakuonhatsuon = ["ga", "gi", "gu", "ge", "go",
+							"za", "ji", "zu", "ze", "zo",
+							"da", "ji", "zu", "de", "do",
+							"ba", "bi", "bu", "be", "bo",
+							"pa", "pi", "pu", "pe", "po",
+						]
+
+						document.write("<div id='dakuonhandakuon'>");
+						document.write("<table cellpadding='27' bordercolor='#DE1660' border='2'>");
+						document.write("<p id='title'>濁音　半濁音</p>")
+						for (i = 0; i < 5; i++) {
+							document.write("<tr>");
+							for (j = 0; j < 5; j++) {
+								document.write("<td class='effect-1' onclick='koe2(" + (i * 5 + j) + ")' id='" + dakuon[i * 5 + j] + "'>");
+
+								document.write("<div>");
+								var name = hatsuon[i * 5 + j];
+								if (name != "") {
+									document.write("<video src='voice/" + dakuonhatsuon[i * 5 + j] + ".mp3' id='" + dakuonhatsuon[i * 5 + j] +
+										"' style='display: none;'></video>");
+								}
+
+								document.write("</div>");
+								document.write("<div class='text3'><a href='javascript:void(0);' id='dakuon" + (i * 5 + j) + "'>" + dakuon[i *
+									5 + j] + "</a></div>");
+								document.write("<div class='text2'>" + dakuonhatsuon[i * 5 + j] + "</div>");
+								document.write("</td>");
+
+								function koe2(num2) {
+									var c2 = document.getElementById(dakuon[num2]);
+									var m2 = document.getElementById(dakuonhatsuon[num2]);
+									m2.play();
+								}
+							}
+							document.write("</tr>");
+						}
+						document.write("</table>");
+
+						document.write("<div id='sokuonbox'>");
+						document.write("<p id='title'>促音</p>");
+						document.write("<div id='sokuon'><p>促音<strong>っ</strong>只出现在か行、さ行、た行、ぱ(半浊音)行前面。</p>");
+						document.write("<p><strong>1.</strong>在促音っ后面连接か行（か、き、く、け、こ）的时候，以 k 的发音方法顿挫一拍（只做口型不出声）。</p>");
+						document.write("<p>いっかい「ikkai」一层 がっき「gakki」乐器</p>");
+						document.write("<p>はっけん「hakken」发现　 いっこ「ikko」一个</p>");
+						document.write("<p><strong>2.</strong>在促音っ后面连接ぱ行（ぱ、ぴ、ぷ、ぺ、ぽ）的时候，以 p 的发音方法顿挫一拍。</p>");
+						document.write("<p>いっぱい「ippai」满满的　 　いっぴき「ippiki」一匹</p>");
+						document.write("<p>きっぷ「kippu」票　 しっぽ「shippo」尾巴</p>");
+						document.write("<p><strong>3.</strong>在促音っ后面连接さ行（さ、し、す、せ、そ）或た行（た、ち、つ、て、と）的时候，以 s 或 t 的发音方法顿挫一拍。</p>");
+						document.write("<p>いっさい「issai」一岁　 ざっし「zasshi」杂志</p>");
+						document.write("<p>けっせき「kesseki」缺席 さっそく「sassoku」立刻</p>");
+						document.write("<p>きって「kitte」邮票　 おっと「otto」丈夫</p>");
+						document.write("</div></div>");
+
+						document.write("</div>");
+
+
+						var youon = ["きゃ", "きゅ", "きょ",
+							"ぎゃ", "ぎゅ", "ぎょ",
+							"しゃ", "しゅ", "しょ",
+							"じゃ", "じゅ", "じょ",
+							"ちゃ", "ちゅ", "ちょ",
+							"ぢゃ", "ぢゅ", "ぢょ",
+							"にゃ", "にゅ", "にょ",
+							"ひゃ", "ひゅ", "ひょ",
+							"びゃ", "びゅ", "びょ",
+							"ぴゃ", "ぴゅ", "ぴょ",
+							"みゃ", "みゅ", "みょ",
+							"りゃ", "りゅ", "りょ",
+						]
+						var youonhatsuon = ["kya", "kyu", "kyo",
+							"gya", "gyu", "gyo",
+							"sha", "shu", "sho",
+							"jya", "jyu", "jyo",
+							"cha", "chu", "cho",
+							"jya", "jyu", "jyo",
+							"nya", "nyu", "nyo",
+							"hya", "hyu", "hyo",
+							"bya", "byu", "byo",
+							"pya", "pyu", "pyo",
+							"mya", "myu", "myo",
+							"rya", "ryu", "ryo",
+						]
+
+						document.write("<div id='youon'>");
+						document.write("<table cellpadding='27' bordercolor='#DE1660' border='2'>");
+						document.write("<p id='title1'>拗音</p>")
+						for (i = 0; i < 12; i++) {
+							document.write("<tr>");
+							for (j = 0; j < 3; j++) {
+								document.write("<td class='effect-1' onclick='koe3(" + (i * 3 + j) + ")' id='" + youon[i * 3 + j] + "'>");
+
+								document.write("<div>");
+								var name = hatsuon[i * 3 + j];
+								if (name != "") {
+									document.write("<video src='voice/" + youonhatsuon[i * 3 + j] + ".mp3' id='" + youonhatsuon[i * 3 + j] +
+										"' style='display: none;'></video>");
+								}
+
+								document.write("</div>");
+								document.write("<div class='text3'><a href='javascript:void(0);' id='youon" + (i * 3 + j) + "'>" + youon[i * 3 +
+									j] + "</a></div>");
+								document.write("<div class='text2'>" + youonhatsuon[i * 3 + j] + "</div>");
+								document.write("</td>");
+
+								function koe3(num3) {
+
+									var c3 = document.getElementById(youon[num3]);
+									var m3 = document.getElementById(youonhatsuon[num3]);
+
+									m3.play();
+								}
+							}
+							document.write("</tr>");
+						}
+						document.write("</table>");
+						document.write("</div>");
+					</script>
+				</div>
+
+			</div>
+		</main>
+
+		<end>
+			<div id="center">
+				<h2>平假名来自汉字的草体</h2>
+			</div>
+			<div id="center">
+				<div id="gojyuuonjpg">
+					<img src="img/gojyuuon.jpg">
+				</div>
+				<div id="oboe_box">
+					<div id="center">
+						<script type="text/javascript">
+							var gojyuuon = ["あ", "い", "う", "え", "お",
+								"か", "き", "く", "け", "こ",
+								"さ", "し", "す", "せ", "そ",
+								"た", "ち", "つ", "て", "と",
+								"な", "に", "ぬ", "ね", "の",
+								"は", "ひ", "ふ", "へ", "ほ",
+								"ま", "み", "む", "め", "も",
+								"や", "", "ゆ", "", "よ",
+								"ら", "り", "る", "れ", "ろ",
+								"わ", "", "", "", "を",
+								"ん"
+							]
+							var kanji = ["安", "以", "宇", "衣", "於",
+								"加", "几", "久", "计", "己",
+								"佐", "之", "寸", "世", "曽",
+								"太", "知", "川", "天", "止",
+								"奈", "仁", "奴", "祢", "乃",
+								"波", "比", "不", "部", "保",
+								"末", "美", "武", "女", "毛",
+								"也", "", "由", "", "与",
+								"良", "利", "留", "礼", "吕",
+								"和", "", "", "", "远",
+								"无"
+							];
+							document.write();
+							document.write("<div id='oboeru'>");
+							for (i = 0; i < 10; i++) {
+								document.write("<div id='gyou'><span><div>" + gojyuuon[5 * i] + "行</div></span>");
+								for (j = 0; j < 5; j++) {
+									if (kanji[5 * i + j] != "")
+										document.write("<a href='javascript:void(0);' onclick='oboe(" + (5 * i + j) +
+											");'><img src='biaoqian/a.gif' alt=''>" + kanji[5 * i + j] +
+											"&nbsp;→&nbsp" + gojyuuon[5 * i + j] + "</a>")
+								}
+								document.write("</div>");
+							}
+							document.write(
+								"<div id='gyou'><span><div>ん行</div></span><a href='javascript:void(0);' onclick='oboe(50)';><img src='biaoqian/a.gif' alt=''>无&nbsp→&nbspん</a></div>"
+							);
+							document.write("</div>");
+						</script>
+					</div>
+					<div id="oboekata_box">
+						<div id="kana_div">
+							<img src="img/a.gif" alt="" id="gana">
+						</div>
+						<div id="oboekata_pdiv">
+							<p id="oboekata_p">详解：首字“阿”是假名发音。想这句话时，大脑只需提取出“安了”两字，“安”字稍加变形后，即可得到平假名“あ”；“了”字稍加变形后，就可得到片假名“ア”。</p>
+						</div>
+						<div id="gana_div">
+							<img src="img/a1.gif" alt="" id="kana">
+						</div>
+					</div>
+				</div>
+			</div>
+		</end>
+
+		<footer>
+			<div class="footer" align="center">
+				<div class="footer_main">
+					<div class="footer_left">
+						<span>
+							<p class="top1">关于我们</p>
+							<a href="" target="_blank" ga-location="首页" ga-type="按钮-关于我们" class="mt05">关于我们</a>
+							<a href="" target="_blank" ga-location="首页" ga-type="按钮-加入我们">加入我们</a>
+							<a href="" target="_blank" ga-location="首页" ga-type="按钮-媒体报道">媒体报道</a>
+							<a href="" target="_blank" ga-location="首页" ga-type="按钮-联系我们">联系我们</a>
+						</span>
+						<span>
+							<p class="top1">使用帮助</p>
+							<a href="" target="_blank" ga-location="首页" ga-type="按钮-帮助中心" class="mt05">帮助中心</a>
+							<a href="" target="_blank" ga-location="首页" ga-type="按钮-手机学习">手机学习</a>
+							<a href="" target="_blank" ga-location="首页" ga-type="按钮-使用协议">使用协议</a>
+							<a href="" target="_blank" ga-location="首页" ga-type="按钮-网站地图">网站地图</a>
+						</span>
+						<span>
+							<p class="top1">意见反馈</p>
+							<a href="#">合作邮箱：XXXXXXXXXXXXXX</a>
+							<a href="#">投诉邮箱：XXXXXXXXXXXXXX</a>
+							<a href="#">招聘邮箱：XXXXXXXXXXXXXX</a>
+						</span>
+					</div>
+					<div class="footer_right">
+						<span>
+							<a href="#">
+								<img src="logo/logo1.png">
+								APP
+							</a>
+						</span>
+						<span>
+							<a href="#">
+								<img src="logo/logo2.png">
+								客服
+							</a>
+						</span>
+						<span>
+							<a href="#">
+								<img src="logo/logo3.png">
+								微信
+							</a>
+						</span>
+						<span>
+							<a href="#">
+								<img src="logo/logo4.png">
+								微博
+							</a>
+						</span>
+						<span>
+							<a href="#">
+								<img src="logo/logo5.png">认证
+							</a>
+						</span>
+						<div id="xuke">
+							<p>© Copyright 20XX-20XX XXXX 版权所有 ICP证：XXX-20XXXXXX<img src="logo/110.png">公网安备 XXXXXXXXXXXXXX号</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</body>
+</html>

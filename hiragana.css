@@ -1,0 +1,275 @@
+/* 以下五十音图 */
+table td {
+	
+	font-size: 39px;
+	border-style: outset;
+}
+table tr {
+	border-style: outset;
+}
+table div {
+	color: #39C5BB;
+	text-align: center;
+}
+table div a {
+	font-size: 31px;
+	text-decoration: none;
+}
+table{
+	
+	border: solid white 1px;
+	background-color: #080808;
+}
+/* 以上五十音图 */
+
+/* 以下文字格式 */
+.effect-1{
+	position: relative;
+}
+.text1{
+	position: absolute;
+	bottom: 27px;
+	z-index: 1;
+}
+.text2{
+	position: absolute;
+	
+	left: 36px;
+	bottom: 6px;
+	z-index: 2;
+	font-size: 10px;
+}
+.image img{
+	height: 39px;
+	width: 39px;
+	z-index: 0;
+	opacity: 0;
+}
+
+.effect-1:hover .image img{
+	opacity: 1;
+}
+.effect-1:hover .text1{
+	opacity: 0;
+}
+/* 以上文字格式 */
+/* 以下文字格式 */
+.text1 a,.text3 a{ 
+	color: #39C5BB;
+	font-size: 39px;
+}
+#title{
+	width: 480px;
+	height: 52px;
+	font-size: 39px;
+	border: black solid 3px;
+	background-color: floralwhite;
+	text-align: center;
+}
+#title1{
+	width: 405.6px;
+	height: 52px;
+	font-size: 39px;
+	border: black solid 3px;
+	background-color: floralwhite;
+	text-align: center;	
+}
+#main{
+	display: flex;
+	justify-content: center;
+/* 	flex-flow: nowrap; */
+	/* 缩小时部分不可见 */
+/* 	background: url("img/bg.jpg") no-repeat; */
+	background-size: 100%;
+	padding-top: 20px;
+	width: 1519.5px;
+	height: 1380px;
+	
+}
+
+/* 以上文字格式  */
+/* 以下五十音 */
+#gojyuuon{
+	margin-left: 25px;
+	margin-right:20px;
+	opacity: 0.9;
+}
+/* 以上五十音 */
+/* dakuonhandakuon */
+#dakuonhandakuon{
+	margin-left: 20px;
+	margin-right:20px;
+	opacity: 0.9;
+}
+/* dakuonhandakuon */
+/* youon */
+#youon{
+	margin-left: 20px;
+	margin-right:25px;
+	opacity: 0.9;
+	
+}
+/* youon */
+/* sokuon */
+#sokuonbox{
+	margin-top: 120px;
+}
+#sokuon{
+	border-radius: 10px;
+	background-color: #000000;
+	opacity: 0.95;
+}
+#sokuon p{
+	color: #39C5BB;
+	line-height: 30px;
+}
+/* sokuon */
+/* 以下背景 */
+body {
+	background: url(bodybg/bg10.jpg) repeat fixed center;
+	background-size: 100%;
+}
+/* 以上背景 */
+
+#center {
+	display: flex;
+	justify-content: center;
+}
+/* 以下aside */
+#jianjie{
+	background: url(img/modulebg2.jpg) no-repeat;
+	background-size:cover;
+	display: flex;
+	justify-content: center;
+	width: 1450px;
+	margin-bottom: 6px;
+	margin-top: 6px;
+	border: solid 6px white;
+}
+#jianjie1{
+	width: 400px;
+	height: 450px;
+	margin: 40px 20px 10px;
+}
+#jianjie2{
+	margin: 40px;
+	width: 500px;
+}
+#jianjie2 p{
+	font-size: 27px;
+}
+#jianjie2  img {
+     width: 400px; 
+     margin: 30px 30px 30px 30px; 
+    position: relative; 
+}
+
+.kaete{ 
+ 	border: black solid 1px;
+	background-color: lightgoldenrodyellow; 
+	width: 238px;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+}
+.kaete a{
+	font-size: 39px;
+}
+/* 以下aside */
+
+
+/* oboe */
+#oboe_box{
+	width: 1110px;
+	height: 400px;
+	background-color: #333333;
+	border-radius: 7px;
+	background-size: 100%;
+}
+#oboeru{
+	width: 1100px;
+	height: 52px;
+	display: flex;
+	justify-content: center;
+}
+#gyou{
+	width: 100px;
+}
+#gyou span div{
+	color: #333333;
+	border-radius: 2px;
+	border: #CCCCCC solid 2px;
+	background-color: white;
+}
+#gyou a{
+	color: #333333;
+	display: none;
+}
+#gyou:hover a{
+	display: block;
+}
+#oboeru li{
+	
+}
+#oboeru span{
+	font-size: 38px;
+}
+#oboeru{
+	text-align: center;
+	margin-top: 2px;
+	min-width: 108px;
+}
+
+#gyou a{
+	font-size: 25px;
+	color: grey;
+	border: #39C5BB solid 1px;
+	background-color: white;
+}
+/* oboe */
+
+/* 以下记忆方法 */
+#oboekata_box{
+	display: flex;
+	justify-content: center;
+	margin-top: 178px;
+}
+#oboekata_pdiv{
+	width: 600px;
+	height: 100px;
+	margin-left: 20px;
+	margin-right: 20px;
+	border-radius: 5px;
+	background-color: #CCCCCC;
+}
+#oboekata_p{
+	font-size: 18px;
+	text-indent:2em;
+}
+	
+#kana,#gana{
+	width: 100px;
+	border: white solid 4px;
+	border-radius: 4px;
+}
+/* 以上记忆方法 */
+
+/* 以下底图 */
+
+/* 以上底图 */
+
+/*gojyuuonjpg */
+#gojyuuonjpg{
+	border: solid 3px white;
+	border-radius: 3px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 20px;
+}
+#gojyuuonjpg img{
+	width: 300px;
+}
+/*gojyuuonjpg */
+
+
+

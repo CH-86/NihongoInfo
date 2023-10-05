@@ -1,0 +1,242 @@
+/* 公共 */
+.content {
+	line-height: 24px;
+	font: 14px;
+	width: 1100px;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+/* 公共 */
+
+/* box1 */
+.box1 {
+	width: 100%;
+	height: 292px;
+	margin-top: 30px;
+}
+.text_p {
+	position: absolute;
+	color: white;
+	margin-top: -105px;
+	font-size: 30px;
+	text-align: left;
+	padding-top: 20px;
+	padding-left: 15px;
+}
+.text_p span {
+	font-size: 20px;
+}
+#text1 {
+	margin-top: -140px;
+}
+#text2 {
+	margin-top: -165px;
+}
+.textbg {
+	height: 105px;
+	width: 100%;
+	position: absolute;
+	opacity: 0.5;
+	background: black;
+	margin-top: -105px;
+}
+.box1_left {
+	float: left;
+	width: 536px;
+	height: 292px;
+	overflow: hidden;
+	border-radius: 10px;
+	position: relative;
+	cursor: pointer;
+}
+
+.box1_left img {
+	width: 100%;
+	margin-top: -50px;
+}
+.box1_right {
+	width: 545px;
+	height: 292px;
+	float: right;
+}
+
+.box1_right1 {
+	width: 100%;
+	height: 130px;
+	overflow: hidden;
+	border-radius: 10px;
+	position: relative;
+	cursor: pointer;
+}
+.box1_right2 {
+	width: 100%;
+	height: 130px;
+	margin-top: 32px;
+	overflow: hidden;
+	border-radius: 10px;
+	position: relative;
+	cursor: pointer;
+}
+
+.box1_right1 img {
+	width: 100%;
+	margin-top: -120px;
+}
+
+.box1_right2 img {
+	width: 100%;
+	margin-top: -160px;
+}
+/* box1 */
+
+/* box2 */
+.box2 {
+	width: 100%;
+	height: 440px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.box2_left {
+	width: 190px;
+	height: 440px;
+	float: left;
+	border-radius: 10px;
+	background:url(ryuugaku/5.jpg);
+}
+.box2_left p {
+	width: 30px;
+	height: 400px;
+	font-size: 30px;
+	color: white;
+	line-height: 30px;
+	padding-top: 10px;
+	margin-left: 30px;
+}
+.gakkoubox {
+	width: 860px;
+	height: 440px;
+	float: right;
+}
+/* box2 */
+
+
+/* 学校 */
+.gakkou {
+	width: 180px;
+	height: 200px;
+	float: left;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+	border-radius: 10px;
+}
+/* 学校 */
+
+/* 大学 */
+#gakkou1 {
+	background: #F9C03C;
+}
+#gakkou2 {
+	background: #A5B8BD;
+	margin-left: 46px;
+}
+#gakkou3 {
+	background: #78B6FE;
+	margin-left: 46px;
+}
+#gakkou4 {
+	background: #ABD9E4;
+	margin-left: 46px;
+}
+#gakkou5 {
+	background: #ABD9E4;
+	margin-top: 40px;
+}
+#gakkou6 {
+	background: #78B6FE;
+	margin-top: 40px;
+	margin-left: 46px;
+}
+#gakkou7 {
+	background: #A5B8BD;
+	margin-top: 40px;
+	margin-left: 46px;
+}
+#gakkou8 {
+	background: #F9C03C;
+	margin-top: 40px;
+	margin-left: 46px;
+}
+.gakkouimg {
+	width: 120px;
+	height: 120px;
+	border-radius: 120px;
+	background: white;
+	margin: 15px auto;
+}
+.gakkouimg img {
+	width: 80%;
+	margin-top: 13px;
+}
+.text3{
+	font-size:25px;
+	margin-top:-5px;
+}
+.text4{
+	font-size:15px;
+}
+/* 大学 */
+
+/* main */
+.tenran {
+	width: 70%;
+	margin: 0 auto;
+}
+.tenran img {
+	width: 120px;
+	float: right;
+}
+.gakkoulogo {
+	height: 120px;
+}
+.gakkoutext {
+	width: 70%;
+	height: 120px;
+	float: left;
+}
+.gakkoutext p {
+	font-size: 50px;
+	text-align: left;
+	line-height: 40px;
+	margin-top: 25px;
+}
+.gakkoutext p span {
+	font-size: 26px;
+}
+
+/* main */
+
+
+/* syoukai */
+#syoukai{
+	width:100%;
+	text-align:left;
+	text-indent:10px;
+	line-height:32px;
+	font-size:19px;
+	margin-top:20px;
+}
+/* syoukai */
+
+/* 查看更多 */
+#motto{
+	width:100%;
+	text-align:right;
+	color:#F1C155;
+}
+/* 查看更多 */
+
+
+

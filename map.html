@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="title.css">
+		<link rel="stylesheet" href="map.css">
+		<script src="js/map.js"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				text-decoration: none;
+				list-style-type: none;
+			}
+
+			#in {
+				background-color: #e10000;
+			}
+		</style>
+		<script type="text/javascript">
+		</script>
+	</head>
+	<body>
+		<header>
+			<div id="nav">
+				<ul>
+					<li><a href="top.html">首页</a></li>
+					<li><a href="hiragana.html">五十音图</a></li>
+					<li id="in"><a href="map.html">日本概况</a></li>
+					<li><a href="ryuugaku.html">日本留学</a></li>
+					<li><a href="nihonryouri.html">日本料理</a></li>
+					<li>
+						<div id="showtime"></div>
+					</li>
+					<li><img src="img/logo.gif"></li>
+				</ul>
+			</div>
+		</header>
+		<div id="tdf">
+			<div id="tdfjianjie">
+				<h2 align="center"><span>日本概况</span></h2>
+				<div>
+					<td>
+						<p><br></p>
+						<p><br></p>
+						<p><strong id="wenzhi11">日本被划分为47个一级行政区：</strong><strong><span>1都，1道，2府，43县。</span></strong></p>
+						<p><strong id="wenzhi11">1都=東京都「ときょうと」</strong></p>
+						<p><strong id="wenzhi11">1道=北海道「ほっかいどう」</strong></p>
+						<p><strong id="wenzhi11">2府=京都府「きょうとふ」と大阪府「おおさかふ」</strong></p>
+						<p><strong id="wenzhi11">日本的县相当于中国的省，面积要比中国小很多。另外这43个县从北到南依次分为9个行政区</strong></p>
+					</td>
+				</div>
+			</div>
+			<div id="tdfimg">
+				<p align="center"><span>【图为各都道府县徽章一览】</span></p>
+				<img src="logo/icon_toudoufuken.jpg">
+			</div>
+		</div>
+
+		<div align="center">
+			<div id="gaikuang">
+				<div id="gaikuang_chihou">
+					<ul id="gaikuang_chihou_ul">
+						<!-- onclick="bianhuan(0)" -->
+						<li></li>
+						<li class="" id="active1" onclick="bianhuan(1)">北海道地方（ほっかいどう）</li>
+						<li class="" id="active2" onclick="bianhuan(2)">東北地方（とうほくちほう）</li>
+						<li class="" id="active3" onclick="bianhuan(3)">関東地方（かんとうちほう）</li>
+						<li class="" id="active4" onclick="bianhuan(4)">中部地方（ちゅうぶちほう）</li>
+						<li class="active" id="active5" onclick="bianhuan(5)">近畿地方（きんきちほう）</li>
+						<li class="" id="active6" onclick="bianhuan(6)">中国地方（ちゅうごくちほう）</li>
+						<li class="" id="active7" onclick="bianhuan(7)">四国地方（しこくちほう）</li>
+						<li class="" id="active8" onclick="bianhuan(8)">九州地方（きゅうしゅうちほう）</li>
+					</ul>
+				</div>
+				<div>
+					<div id="chihou1" class="chihou">
+						<ul class="chihou-zenbu">
+							<li class="on" id="chihou11">北海道</li>
+						</ul>
+						<p><strong><span>北海道（ほっかいどう）</span></strong>北海道（Hokkaido），是日本47个都道府县中唯一的道，也是最北的一级行政区，为日本除了本州以外最大的岛，也是世界面积第21大岛屿，略小于爱尔兰岛。南以津轻海峡界本州岛，北以宗谷海峡界库页岛。札幌是北海道的行政中心以及最大城市。</p>
+					</div>
+				</div>
+				<div>
+					<div id="chihou2" class="chihou">
+						<ul class="chihou-zenbu">
+							<li class="on" id="chihou21" onclick="bianhuan1(21)">福島県</li>
+							<li class="" id="chihou22" onclick="bianhuan1(22)">山形県</li>
+							<li class="" id="chihou23" onclick="bianhuan1(23)">秋田県</li>
+							<li class="" id="chihou24" onclick="bianhuan1(24)">宮城県</li>
+							<li class="" id="chihou25" onclick="bianhuan1(25)">岩手県</li>
+							<li class="" id="chihou26" onclick="bianhuan1(26)">青森県</li>
+						</ul>
+						<p id="chihou_p26" style="display: none;"><strong><span>青森県（あおもりけん）：</span></strong>青森县（Aomori-ken），位于日本本州岛最北端，县域土地面积居日本全国第8位，森林覆盖率近70%，风景秀丽，物产丰富，油菜和大蒜种植面积和生产均居日本第一位，苹果产量位居日本第一，是富士苹果的发源地，是日本屈指可数的食品宝库，是日本自然环境最优越的地方之一，为日本的长寿县之一。</p>
+						<p id="chihou_p25" style="display: none;"><strong><span>岩手県（いわてけん）：</span></strong>岩手县位于日本本州岛东北部，是日本著名的农业、渔业地区，一级行政区，是日本著名的稻米、肉牛、乳牛产地。海岸复杂多变，多天然良港，面临千岛寒海流与日本暖海流流的交汇处，渔业资源丰富，水产养殖和捕捞渔业十分发达。宫古和釜石是其主要渔港。2011年3月11日东日本大地震严重受灾县。</p>
+						<p id="chihou_p24" style="display: none;"><strong><span>宮城県（みやぎけん）：</span></strong>宫城县位于日本东北地方的中央，宫城县是日本一级行政区，属农业、畜牧业地区。是日本稻米、肉牛产地。以县都仙台市为中心，南有阿武隈川、东有北上川河流，周边是仙台平原，西有栗驹山和船形连峰，藏王连峰等群山，为日本东北地区的政治、文化、经济中心。宫城县经济以第三产业为主，2009年宫城县经济规模为81934亿日元。</p>
+						<p id="chihou_p23" style="display: none;"><strong><span>秋田県（あきたけん）：</span></strong>秋田县（Akita-ken），位于<span>日本本州岛东北部</span>，人口稀少，几乎没有工业，农业生产中特别是稻米种植非常发达，粮食自给率为全日本第二位，拥有被称为酒之国度的“<span>秋田美酒</span>”；森林资源丰富，盛产的秋田杉树被称为<span>“日本三大美杉”</span>，用秋田杉树制作的涂漆家具销往日本各地，外销量居日本第一位。拥有日本国内最多知名的温泉旅游景点，如<span>汤濑温泉、玉川温泉、后生挂温泉</span>.....因此，秋田县也被誉为日本的<span>温泉大县。</span></p>
+						<p id="chihou_p22" style="display: none;"><strong><span>山形県（やまがたけん）：</span></strong>山形县（Yamagata-ken），位于日本东北地区西南部，是生产大米的主产地，水果生产量在日本占有很高的份额，素有“水果王国”的美称。工业以米泽、鹤冈的纺织业，山形铁工为代表的传统工业，内陆的现代化工业进入后，形成了以酒田为中心的现代临海工业区。全县分为村山、最上、置赐和庄内4个地区，属海洋性气候，四季分明，拥有100多个温泉，被誉为温泉爱好者的天堂。</p>
+						<p id="chihou_p21" style="display: block;"><strong><span>福島県（ふくしまけん）：</span></strong>是日本东北地方南部的一县，位于福岛中部的“中通”被东面的阿武限高地、西面的奥羽山脉夹在其中，由被大致呈南北走向的并列的三大山地分割成三个地区，有起伏变化的山地、复杂的火山地形和大大小小的湖沼群等，自然景观资源丰富。东部的浜通地区位于靠近太平洋的一侧，气候温暖宜人，一年四季盛产各种水果，被称为“水果的王国”。2011年3月11日，日本本州岛以东海域发生强烈地震，导致核电站反应堆堆芯熔毁和放射性物质泄漏的事故，以及新地町沿岸发生海啸。</p>
+
+					</div>
+				</div>
+				<div>
+					<div id="chihou3" class="chihou">
+						<ul class="chihou-zenbu">
+							<li class="on" id="chihou31" onclick="bianhuan1(31)">東京都</li>
+							<li class="" id="chihou32" onclick="bianhuan1(32)">神奈川県</li>
+							<li class="" id="chihou33" onclick="bianhuan1(33)">千葉県</li>
+							<li class="" id="chihou34" onclick="bianhuan1(34)">埼玉県</li>
+							<li class="" id="chihou35" onclick="bianhuan1(35)">群馬県</li>
+							<li class="" id="chihou36" onclick="bianhuan1(36)">栃木県</li>
+							<li class="" id="chihou37" onclick="bianhuan1(37)">茨城県</li>
+						</ul>
+						<p id="chihou_p37" style="display: none;"><strong><span>茨城県（いばらきけん）：</span></strong>是日本本州岛中部一县，东临太平洋，坐落在关东平原东北部，属于首都圈，离东京仅40公里，北靠福岛县，西接栃木县，南有利根川与千叶县、埼玉县相接，交通便利。整个县分3个部分，北部是山地，从中部到南部是关东平原，是利根川和它的支流流域。农业和渔业都很发达，农作物栽培面积居日本第二，果树、蔬菜、花卉、养殖业颇具规模，渔业不仅有近海渔业和远洋渔业，还有淡水渔业。</p>
+						<p id="chihou_p36" style="display: none;"><strong><span>栃木県（とちぎけん）：</span></strong>位于日本本州岛中部，属内陆县，东邻茨城县，西界群马县，南接茨城县、埼玉县，北连福岛县。土地面积6,408.28平方公里，为关东地区最大的县，位居日本第20位，人口密度相对较低。气候有内陆型气候的特征，冷暖温差大，冬季空气干燥，夏季湿度较高，年降雨量大。农业比较发达，呈远郊农业的特征，工业主要集中在中部，旅游资源丰富。</p>
+						<p id="chihou_p35" style="display: none;"><strong><span>群馬県（ぐんまけん）：</span></strong>位于日本国关东平原西北部，虽然是个内陆县，但是各种绿色自然资源丰富，以利根川为代表的水资源也十分丰富。由于靠近东京圈的巨大消费市场，农业非常兴旺，魔芋、黄瓜、蚕茧和蘑菇的产量居全日本前列，奶牛、肉牛、养猪等畜产业也占重要地位；以制造业为中心的各种工厂聚集，为全日本著名的加工业和先端产业发达的工业县。该县出过福田赳夫、中曾根康弘等多位首相，被誉为“总理生产县”。</p>
+						<p id="chihou_p34" style="display: none;"><strong><span>埼玉県（さいたまけん）：</span></strong>位于日本关东地区中部的内陆县，东邻千叶县，西面是长野县，南接东京都，北连茨城县和栃木县，历史上曾与东京都的大部分地区一起被称为武藏国，有着丰富的历史遗迹，被称为多彩的城市。交通网络稠密，两条新干线构成交通运输主动脉，是日本东部最重要的交通中心之一。拥有丰富的土地资源和森林资源，以工业、文化、艺术闻名，是东京北部最重要的工业区。</p>
+						<p id="chihou_p33" style="display: none;"><strong><span>千葉県（ちばけん）：</span></strong>位于日本关东平原东南部，首都圈东侧，由北部的关东平原和中南部的房总半岛组成，是一片东西长约96公里、南北约129公里的狭长半岛形地带。县东南方面朝太平洋，西侧濒临东京湾，西北面与东京都和埼玉县连接，北边与茨城县接壤。土地面积占全日本第28位，比东京都和神奈川县加在一起的面积还大，人口占全日本第6位，平均年龄为42.4岁。该县建有成田国际机场、大型国际会议中心——幕张展馆、东京迪斯尼乐园、“啦啦宝都”购物中心、三井奥特莱斯购物城等大型设施，是日本开发成就最为显著的地区之一，也是为数不多的农业、水产业、工业县。</p>
+						<p id="chihou_p32" style="display: none;"><strong><span>神奈川県（かながわけん）：</span></strong>神奈川县是日本的一级行政区之一，位于东京西南部50公里处广大地区，面向太平洋。该县受太平洋暖流的影响，气候温暖、几乎不下霜；拥有日本最大的贸易港，丰富的旅游资源、优良的工业环境、众多的人口，给农业、渔业和第三产业的发展创造了良好的条件。神奈川县的人口数仅次于东京和大阪、平均人口密度超过3000人/平方公里；工农业总产值仅次于爱知县居日本第二。横滨市是神奈川县的行政和经济中心，位于县东部的还有日本数一数二的工业城市川崎、富有异国情调的港口城市横须贺等。</p>
+						<p id="chihou_p31" style="display: block;"><strong><span>東京都（とうきょうと）：</span></strong>东京都，简称东京（Tokyo），是日本的首都，也是日本政治、经济、文化、教育中心和海陆空交通的枢纽。作为亚洲第一大城市，东京与美国纽约、英国伦敦并列为“三大世界级城市”&nbsp;。东京位于日本列岛中央的关东地区南部，是由23个特别区及26个市、5个町、8个村构成的广域自治体，人口约1329万。</p>
+					</div>
+				</div>
+				<div>
+					<div id="chihou4" class="chihou">
+						<ul class="chihou-zenbu">
+							<li class="on" id="chihou41" onclick="bianhuan1(41)">愛知県</li>
+							<li class="" id="chihou42" onclick="bianhuan1(42)">静岡県</li>
+							<li class="" id="chihou43" onclick="bianhuan1(43)">岐阜県</li>
+							<li class="" id="chihou44" onclick="bianhuan1(44)">長野県</li>
+							<li class="" id="chihou45" onclick="bianhuan1(45)">山梨県</li>
+							<li class="" id="chihou46" onclick="bianhuan1(46)">福井県</li>
+							<li class="" id="chihou47" onclick="bianhuan1(47)">石川県</li>
+							<li class="" id="chihou48" onclick="bianhuan1(48)">富山県</li>
+							<li class="" id="chihou49" onclick="bianhuan1(49)">新潟県</li>
+						</ul>
+						<p id="chihou_p49" style="display: none;"><strong><span>新潟県（にいがたけん）：</span></strong>新潟县位于日本本州岛中北部，濒临日本海，南北长向呈细长形，有着漫长且富于变化的海岸线，是日本海沿岸的海路交通枢纽；以东南部的越后山脉为中心，连绵分布着高度都在2000米以上的陡峭山峦，土地宽广，有海岸、平原、山地等，地形复杂多变，是日本重要稻米产区。工业以食品、机械、电机、化学、合成纤维等为主。该县各地之间的气温、风力和降水量等相互差别很大。其气候特征是四季分明，特别是冬季大量积雪。主要城市有新潟市、长冈市、柏崎市。</p>
+						<p id="chihou_p48" style="display: none;"><strong><span>富山県（とやまけん）：</span></strong>富山县位于日本列岛的中心、本州的中央北部，介于北纬36度16分至36度59分，东经136度46分至137度46分之间，面向日本海，与东京、大阪、名古屋三大都市圈的距离相等，具有得天独厚的地理环境。三面环绕险山峻岭、环抱深水湾的广阔平原不断延伸，由“北阿尔卑斯立山”连峰等山岳地带包围，形成了以富山市为中心、半径为50km的统一连贯的地形，生长植物品种之多位居日本本州岛第一位。水资源丰富，农业和渔业都比较发达，形成了日本海沿岸一带屈指可数的产业集结工业带。</p>
+						<p id="chihou_p47" style="display: none;"><strong><span>石川県（いしかわけん）：</span></strong>石川县位于日本北陆地区的中部，东邻富山县、岐阜县，南接福井县。南部为白山，中部是金泽平原。北面的能登半岛延伸至日本海，海岸线长达581.6公里。能登半岛各港口是渔业基地，鱼种多、捕获量大。拥有丰富的自然景观、名胜古迹、温泉、饮食文化，是一个旅游资源丰富和旅游业发达的县，以手工业、旅游业、服务业为主的第三产业十分发达。四季分明，年平均气温15.8度，年平均年降雨量2,329毫米。夏高温湿热，冬多雨雪，日照少，有深雪地带，除山区外，冬季最冷时气温不低于零度。</p>
+						<p id="chihou_p46" style="display: none;"><strong><span>福井県（ふくいけん）：</span></strong>福井县（Fukui-ken），位于日本本州岛靠日本海一侧，以敦贺市东部为界，往北称为岭北（越前），南边则叫做岭南（若狭）。其是日本海沿岸的重要门户，是日本东北地区和北陆地区通向京城的交通要冲，是传播来自亚洲大陆文化的重要窗口，是全日本男女平均寿命最长的县。岭北福井平原是主要农业区，是由九头龙河冲积而成；岭南的若狭湾集中了日本的原子能电站；水产业主要集中在若狭湾，敦贺是主要的渔港，以沿岸渔业和近海渔业为主。气候四季分明，是多雨雪的日本海气候，冬天西北风带来降雪，是日本降雨较多的地方。</p>
+						<p id="chihou_p45" style="display: none;"><strong><span>山梨県（やまなしけん）：</span></strong>山梨县（Yamanashi-ken），是日本本州岛中部地方的一个县，位于东京圈内并和东京邻接，向东是东京都和神奈川县，离东京市区约120公里，向南是静冈县，向西是长野县，向北是埼玉县和长野县，86%的土地面积是山地，森林资源丰富，是一个内陆县，是富士山所在县，是日本重要的水果生产地区，号称果树王国，桃、李子、葡萄、葡萄酒产量居全日本第一位，贵金属、宝石加工工艺发达，首饰加工业闻名全日本。</p>
+						<p id="chihou_p44" style="display: none;"><strong><span>長野県（ながのけん）：</span></strong>长野县（Nagano-ken），位于日本本州岛中部，处于关西、关东之间，在素有“日本屋脊”（日本の屋根）之称的中央高地上，东邻群马县，西界岐阜县，南接山梨县和静冈县，北连新澙县和富山县，是日本八大内陆县之一，也是全日本面积第四大的县。高原果树和蔬菜栽培很发达，日本少有的农业县之一，号称园艺王国。林业发达，木曾山的桧林号称日本三大美林之一。有着丰富的高山湖和河流，虹鳟鱼养殖居日本第一位。观光资源丰富，被称为“日本的瑞士”，是日本屈指可数的观光县。1998年，长野县曾举办过冬季奥林匹克运动会和残奥会。</p>
+						<p id="chihou_p43" style="display: none;"><strong><span>岐阜県（ぎふけん）：</span></strong>岐阜县位于日本本州岛中部，是被爱知县、三重县、滋贺县、福井县、石川县、富山县、长野县所包围的内陆县，距东京西300公里、大阪东150公里、名古屋北30公里。土地面积占日本国土的2.8%，在日本47个都道府县中居第7位，属于大县，森林覆盖率非常高，占到总面积的80%，居全日本第2位，被誉为“森林之国”，号称山水之国，又有飞山浓水之称。锻造业很发达，所产的各种刀类行销全日本。</p>
+						<p id="chihou_p42" style="display: none;"><strong><span>静岡県（しずおかけん）：</span></strong>静冈县处在日本东京和大阪之间，是日本的主要交通要道。境内有富士山，有爱鹰山、远笠山等火山所在的富士火山带，山地一直延伸到伊豆半岛；有丰富的温泉资源，有“温泉半岛”之称；有骏河湾、远州滩、浜名湖等海、湖，天龙川、大井川河流以及位于河口的平原等。自然环境极富变化，气候温和，雨量充沛。清水港是该县最大的国际贸易港，是日本十七个定点港口之一。</p>
+						<p id="chihou_p41" style="display: block;"><strong><span>愛知県（あいちけん）：</span></strong>爱知县（Aichi-ken），位于日本本州岛中部地区的西南部，县厅所在地为名古屋市。分别接壤三重、岐阜、长野和静冈县，南临太平洋，可眺望伊势湾和三河湾。这里气候温暖，是日本东西交通的重要枢纽，自古以来就作为产业的集中地，得到了繁荣和发展。2005年，曾因举办爱知世博会而受到世界的瞩目。</p>
+					</div>
+				</div>
+				<div>
+					<div id="chihou5" class="chihou">
+						<ul class="chihou-zenbu">
+							<li class="on" id="chihou51" onclick="bianhuan1(51)">和歌山県</li>
+							<li class="" id="chihou52" onclick="bianhuan1(52)">奈良県</li>
+							<li class="" id="chihou53" onclick="bianhuan1(53)">兵庫県</li>
+							<li class="" id="chihou54" onclick="bianhuan1(54)">大阪府</li>
+							<li class="" id="chihou55" onclick="bianhuan1(55)">京都府</li>
+							<li class="" id="chihou56" onclick="bianhuan1(56)">滋賀県</li>
+							<li class="" id="chihou57" onclick="bianhuan1(57)">三重県</li>
+						</ul>
+						<p id="chihou_p51" style="display: block;"><strong><span id="chihou_span5">和歌山県（わかやまけん）：</span></strong>和歌山县（Wakayama-Ken），地处日本最大的半岛“纪伊半岛”的西南面，面向太平洋，东部与东北部分别与三重县、奈良县以及大阪府接壤，土地面积占全日本面积的1.25%，居第30位，有长约650公里的海岸线、郁郁葱葱的广袤山林，木材资源丰富，有“山海之国”、“木材王国”、“果树王国”之称。林业、家具制造等行业比较发达；渔港众多，渔业是主要产业；工业以钢铁为主。四季气候温暖、湿润，夏季闷热，冬季气候平稳，除山区之外，几乎不下雪。</p>
+						<p id="chihou_p52" style="display: none;"><strong><span>奈良県（ならけん）：</span></strong>古称大和，位于日本纪伊半岛中央，近畿地区的中南部，东邻三重县，西接大阪府，南接和歌山县，北连京都府，为内陆县，是日本历史和文化的发祥地之一。主要产业有纤维产品制造业、木材、木制品制造业等，畜产业也较发达。2015年12月20日，在山东青岛举行的第七次中日韩文化部长会议上，日本奈良被授予“2016年东亚文化之都”称号。</p>
+						<p id="chihou_p53" style="display: none;"><strong><span>兵庫県（ひょうごけん）：</span></strong>位于日本列岛中部的关西地区，北临日本海，南濒大阪湾，经濑户内海与太平洋相望，是日本唯一一个既临日本海，又接濑户内海的县，是近畿地区的中心之一，是关西地区面积最大的县。由大城市、农山村和离岛等各种地区形成，气候和风土各异，各地可享受洗海水浴、滑雪乃至泡温泉等多种娱乐和休闲活动，被称为“日本的缩影”。</p>
+						<p id="chihou_p54" style="display: none;"><strong><span>大阪府（おおさかふ）：</span></strong>大阪府是日本国一级行政区里二府的其中之一，古名“难波”（なにわ，也写作浪花或浪速），位于日本的中西部、近畿地方的中央，虽然其面积在日本全国的都道府县中最小，但人口与人口密度却仅次于首都东京，为日本第二位。三面被山地所围，西部面临呈弓形的大阪湾，靠近日本的古都京都和奈良县，水陆空交通发达。府内中、小企业集中，是日本重要的重工业密集区。</p>
+						<p id="chihou_p55" style="display: none;"><strong><span>三重県（みえけん）：</span></strong>三重县位于日本本州岛中部不仅有能滑雪的高山、亚热带植物生长的海滨，也有以海女和珍珠为代表的伊势志摩国立公园和吉野熊野国立公园的自然美景，还有伊势神宫、伊贺上野等历史文化的代表，拥有现代化的大规模游乐场和主题公园、博物馆等，是日本著名的观光地。汽车、造船等运输机械制造业和精炼石油等重化工业发达，是日本中京工业区的一部分。</p>
+						<p id="chihou_p56" style="display: none;"><strong><span>滋賀県（しがけん）：</span></strong>滋贺县的古名叫近江国，又叫淡水国，交通网四通八达，是连接日本东西的走廊和沟通太平洋与日本海的通道。气候温和，四季分明。境内中心有日本最大的湖泊“琵琶湖”。渔业以琵琶湖盛产的淡水鱼为主；工业发达，机械制造、纺织、化工、制药和商品加工等传统产业外，致力于发展电子工业、生物工程等尖端技术产业，为日本屈指可数的工业县。</p>
+						<p id="chihou_p57" style="display: none;"><strong><span>京都府（きょうとふ）：</span></strong>位于日本本州岛的中部呈由东南朝西北伸展的细长形状，由3种地形组成，分别是西北端的环绕着舞鹤湾的里亚式海岸，中部的丹波山地和东部的京都盆地。京都府是人口较多的自治体之一，是日本人的精神故乡，是日本文化的源点，是日本的文化象征之地。古都京都是根据历来王朝文化中盛行的日本式唯美意识所构建的。以神社、佛阁等历史建筑物、庭院、绘画、传统活动、京都料理为代表，被称为“千年古都”。</p>
+
+					</div>
+				</div>
+				<div>
+					<div id="chihou6" class="chihou">
+						<ul class="chihou-zenbu">
+							<li class="on" id="chihou61" onclick="bianhuan1(61)">山口県</li>
+							<li class="" id="chihou62" onclick="bianhuan1(62)">広島県</li>
+							<li class="" id="chihou63" onclick="bianhuan1(63)">岡山県</li>
+							<li class="" id="chihou64" onclick="bianhuan1(64)">島根県</li>
+							<li class="" id="chihou65" onclick="bianhuan1(65)">鳥取県</li>
+
+						</ul>
+						<p id="chihou_p65" style="display: block;"><strong><span>鳥取県（とっとりけん）：</span></strong>位于中国地方东北部，北靠日本海，所谓山阴地方的东侧。东部与兵库县相连，西部与岛根县相接，南部中国山地（即中国地方的山地）与冈山县、广岛县紧邻。西日本屈指可数的豪雪地带。全国47都道府县中，面积为第七小，是全国人口最少的县。另外，城市的数量也最少的。县厅所在地是县东部的鸟取市。</p>
+						<p id="chihou_p64" style="display: none;"><strong><span>島根県（しまねけん）：</span></strong>中国地方北部，交通便利，是日本古文化的发源地之一。南部连绵的群山是中国山地的一部分。从东北到西南形成细长地形，平原很少，特别是西部地区，山峦一直延伸到海岸线。森林面积占土地总面积的约80%，是日本重要的森林县之一。工业主要是精密机械制造业等，渔业资源丰富，旅游资源丰富。气候四季分明，东部冬季降雨量较多，西部较少。</p>
+						<p id="chihou_p63" style="display: none;"><strong><span>岡山県（おかやまけん）：</span></strong>位于日本中国地方的东南部，濑户内海拥有大小合计约90个岛屿。交通基础设施完善，自然风景优美，气候温暖，日照时间长，拥有“晴天王国”之美誉；适合葡萄、桃等水果的栽培，有水果王国的美誉；蒜山高原还盛产牛奶和奶酪。主要人口和经济活动集中在冈山平原上的冈山市和仓敷市。境内有许多史迹和有历史的建筑物，温泉资源丰富，有被誉为“美作三汤”的汤乡、奥津、汤原等各种名汤、秘汤。</p>
+						<p id="chihou_p62" style="display: none;"><strong><span>広島県（ひろしまけん）</span></strong>广岛县位于日本中国地方的中部，面对濑户内海的中央，东西长130公里，南北长120公里，是日本中国地方的政治、经济中心。地形地貌丰富多样，其中山区面积约占总面积的73%，岛屿众多，被认为是“日本的缩影”。交通发达，良好的深水码头、设施完善的国际机场、方便快捷的铁路和纵横交错的公路构筑了高效、优质和便利的交通网络。四季气候温润，少有地震和台风等自然灾害。汽车制造等在国际上享有盛誉，工艺品以熊野毛笔等最为有名，著名的食品有清酒等。首府广岛市，是中国、四国地区最大的城市，是世界上第一个被原子弹严重破坏的城市（1945年8月6日）</p>
+						<p id="chihou_p61" style="display: none;"><strong><span>山口県（やまぐちけん）</span></strong>山口县位于日本本州岛最西端，形如半岛，是连通日本本州岛与朝鲜半岛乃至中国的交通要冲。三面环海，是日本的水产大县，以下关市盛产河豚而最为著名，对外贸易发达，石油化学工业、渔业方面都非常发达和繁荣，为日本资本主义思想的发源地之一。山地、丘陵占90%以上，低地只有1/10，农耕条件不佳，有日本最大的喀斯特高原、著名的钟乳石岩洞和有着原始森林的国家自然公园等，有“小京都”的美称。该县因出了菅直人等多位日本首相而被视为“政治家的摇篮”。1895年4月，清政府与日本在山口县下关市签订《马关条约》。</p>
+					</div>
+				</div>
+				<div>
+					<div id="chihou7" class="chihou">
+						<ul class="chihou-zenbu">
+							<li class="on" id="chihou71" onclick="bianhuan1(71)">高知県</li>
+							<li class="" id="chihou72" onclick="bianhuan1(72)">愛媛県</li>
+							<li class="" id="chihou73" onclick="bianhuan1(73)">香川県</li>
+							<li class="" id="chihou74" onclick="bianhuan1(74)">徳島県</li>
+						</ul>
+						<p id="chihou_p74" style="display: block;"><strong><span>徳島県（とくしまけん）：</span></strong>德岛县旧称阿波，位于日本西南部，四国地区的东部，东接纪伊水道，西邻高知县，南濒太平洋，北连香川县，三面被1000米高的山峦环抱，隔鸣门海峡与兵库县的溃路岛相望，交通便利，是连接四国与近畿、四国与阪神的要冲。土地面积为4,145.90平方公里，相当于日本全国的1.1%。山地较多，大约80%为山区。剑山把徳岛县分割为南北两片，南北长度不足100公里，由于地形之影响，形成了复杂多样的气候。农业方面以园艺蔬菜为主，海洋捕鱼和水产养殖业十分发达。</p>
+						<p id="chihou_p73" style="display: none;"><strong><span>香川県（かがわけん）：</span></strong>香川县位于日本西南四国岛的东北部，是四国岛面积最小的一个县，分东赞、中赞、西赞三个区域。北临濑户内海与冈山县相望，南邻德岛县，西邻爱媛县，地形呈半月形，为南高北低的地势，由山地、平原和岛屿构成，海岸线总长约690公里，海面众岛棋布，景致优美。气候温和，一年四季温暖少雨，是日本雨量最少的地区之一。工业以石油、煤炭制品，金属制品等基础原料型工业及食品、纤维制品为主；农业主要是种植稻米、蔬菜、果树等农作物，同时发展畜牧业在内的综合农业；水产业以濑户内海的渔业和以鰤鱼、海苔等为中心的养殖业为特征。</p>
+						<p id="chihou_p72" style="display: none;"><strong><span>愛媛県（えひめけん）：</span></strong>爱媛县古称伊予，位于日本四国的西部，气候温暖，得天独厚，由于坡地较多，雨水较少，适宜于果树园艺和畜牧业的发展，“伊予柑”和“爱媛蜜桔”全日本闻名，是日本柑桔生产最多的县。特产丰富，是四国地区最大的产品出口县。造纸业、造船业、毛巾业、化学工业和电子机械工业等都十分繁盛。境内有日本最古老的“道后温泉”、“松山城”、等大量的观光资源。<br></p>
+						<p id="chihou_p71" style="display: none;"><strong><span>高知県（こうちけん）：</span></strong>高知县位于日本本州岛以南的四国岛的南部，面积占四国岛的一半，居日本第17位，西面被险峻的山脉隔断于濑户内海，东面有漫长的海岸线迎对着太平洋，是个水产大县。森林覆盖率居日本第一位，是日本屈指可数的林业县。气候温暖湿润，是日本有数的多雨县之一。海路、航运、铁路、公路等交通设施完备。首府高知市位于高知县中部。</p>
+					</div>
+				</div>
+				<div>
+					<div id="chihou8" class="chihou">
+						<ul class="chihou-zenbu">
+							<li class="on" id="chihou81" onclick="bianhuan1(81)">沖縄県</li>
+							<li class="" id="chihou82" onclick="bianhuan1(82)">鹿児島県</li>
+							<li class="" id="chihou83" onclick="bianhuan1(83)">宮崎県</li>
+							<li class="" id="chihou84" onclick="bianhuan1(84)">大分県</li>
+							<li class="" id="chihou85" onclick="bianhuan1(85)">熊本県</li>
+							<li class="" id="chihou86" onclick="bianhuan1(86)">長崎県</li>
+							<li class="" id="chihou87" onclick="bianhuan1(87)">佐賀県</li>
+							<li class="" id="chihou88" onclick="bianhuan1(88)">福岡県</li>
+						</ul>
+						<p id="chihou_p88" style="display: block;"><strong><span>福岡県（ふくおかけん）：</span></strong>位于日本列岛西部。三面临海，交通发达。因靠近朝鲜半岛和亚洲大陆而被称为“亚洲的大门”。自然环境优美，是享乐旅游、徒步旅行、海洋体育等野外活动的好地方。海岸线全长310公里，渔业发达，渔产丰富，捕渔量在日本全国居前列，水产品种类繁多，有着“食在福冈”之美名。</p>
+						<p id="chihou_p87" style="display: none;"><strong><span>佐賀県（さがけん）：</span></strong>位于日本九州岛西北部，根部，东邻福冈县，西界长崎县，南濒有明海，北面有玄海滩，是九州七个县中最小的县。总面积2439.54平方公里，森林覆盖面积占45.1%，耕地面积23.9%，以渔业和农业为中心产业，海苔的产量居日本全国首位，蜜橘、糯米、小麦也产量丰富，是日本的重要产稻地方。特色产业为陶瓷，最有名的是称为唐津烧、有田烧和伊万里烧的陶器，是日本的“陶瓷工艺之乡”。历史文化底蕴丰厚，文物古迹众多。</p>
+						<p id="chihou_p86" style="display: none;"><strong><span>長崎県（ながさきけん）：</span></strong>九州岛最西部，由半岛、海岬、海湾、湖岔构成，海域面积约是陆地面积的25倍，地形复杂，气候宜人，是一个风光明媚的海洋之县，是日本著名的观光旅游胜地。渔业资源丰富，捕获的天然鱼类品种之多之全，堪称日本第一位；造船业为支柱产业，是日本的造船业基地。长崎市是第二个受原子弹破坏的城市。</p>
+						<p id="chihou_p85" style="display: none;"><strong><span>熊本県（くまもとけん）：</span></strong>熊本县位于日本的西端、三面环山，63%的土地由森林覆盖，是日本数一数二的农业县。地形丰富多彩，气候温暖，极有利于农业发展，<span>西瓜</span>、<span>番茄</span>、<span>榻榻米</span><span>草</span>等作物的生产量居全日本之首。渔业方面天草渔场、有<span>明海</span>和<span>八代海</span>等渔场，鱼种相当丰富。</p>
+						<p id="chihou_p84" style="display: none;"><strong><span>大分県（おおいたけん）：</span></strong>位于日本九州的东北部，多山，被称为九州的屋脊，有面对周防滩的中津平原、别府湾以南的大分平原，多水田，人称“大田”。气候温和，自然灾害较少，复杂的地理环境孕育出了丰富的特产品，是“一村一品”运动的发源地，比较著名的有日田杉、丰后牛、香菇加工。观光资源非常丰富，多温泉，温泉数量和涌出泉量居日本第一位。</p>
+						<p id="chihou_p83" style="display: none;"><strong><span>宮崎県（みやざきけん）：</span></strong>位于日本九州地区东南部，气候温暖，日照时间长，被称为“日向国”。森林资源丰富，森林覆盖率为76%，到处生长着繁茂的亚热带植物，号称阳光和绿色的土地，被外县人称为“居住条件优越的县”。交通方便，景色宜人，风景充满南国情调，旅游观光业发达，是南九州旅游的一大基地，是日本屈指可数的旅游胜地，有“国际会议胜地”之称。农牧业发达，工业主要以制造业和建筑业为主。</p>
+						<p id="chihou_p82" style="display: none;"><strong><span>鹿児島県（かごしまけん）：</span></strong>九州最南端的县，具有多姿多彩的大自然风景和个性力的历史文化等得天独厚的观光资源，是日本为数不多的观光县之一，是日本古代文化发源地之一。此外，还是日本国内唯一拥有聚集了现代科学精粹的宇宙火箭发射设施的县。气候温暖，属亚热带型气候，年平均气温在18.8℃左右，土壤为火山灰性质，农业和畜产业得到了大力发展，为农业县，农业产值在九州各县中居首位。工业以食品、木材、纸浆、造纸为主。</p>
+						<p id="chihou_p81" style="display: none;"><strong><span>沖縄県（おきなわけん）：</span></strong>日本九州岛和中国台湾省之间，是受美国非法托管行政权的日本的海岛县，富有独特的自然环境，除了具有东南亚、中国、日本的民俗风情建筑外，较日本本土更具有独特的美式风情，有“日本的夏威夷”之称，是空手道的故乡。气候温暖宜人，是亚热带海洋性气候地区。经济以旅游业最为发达，由于处在太平洋的大陆架上，其附近水域鱼获丰富，渔业为冲绳人多从事的行业。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<main>
+			<div id="jianjie">
+				<div id="mainjpg">
+					<img src="img/map.gif">
+					<a href="#" id="toukyou" class="didian">東京</a>
+					<a href="#" id="kyouto" class="didian">京都</a>
+					<a href="#" id="hokkaidou" class="didian">北海道</a>
+					<a href="#" id="okinawa" class="didian">沖縄</a>
+				</div>
+			</div>
+			<div id="ddjianjie">
+				<!-- 			<div>
+					<h2>景点1</h2>
+					<div id="didianjianjiejpg1">
+						<img src="img/b-ad1.jpg" alt="图片" id="shyoukaiimg1">
+					</div>
+					<h2>景点2</h2>
+					<div id="didianjianjiejpg2">
+						<img src="img/b-ad1.jpg" alt="图片" id="shyoukaiimg2">
+					</div>
+				</div> -->
+
+				<div style="width:697px;height:500px;border:#ccc solid 1px;" id="dituContent"></div>
+				<div>
+					<h2>LOGO</h2>
+					<div id="logojpg">
+						<div>
+							<img src="logo/kyouto.jpg" alt="图片" id="shyoukailogo">
+						</div>
+					</div>
+					<!-- <h2>美食</h2> -->
+					<h2>景点</h2>
+					<div id="didianjianjiejpg">
+						<img src="img/b-ad1.jpg" alt="图片" id="shyoukaiimg">
+					</div>
+				</div>
+			</div>
+			<div id="jianjie">
+				<div id="wenzhibg">
+					<div id="wenzhi">
+						<p id="shyoukai1" style="text-indent:2em;">东京（とうきょう、Tōkyō），日本首都 ，位于日本关东平原中部，是面向东京湾的国际大都市，日本三大都市圈之一东京都市圈的中心城市。
+							“东京”狭义上指东京都、旧东京府或东京都区部（旧东京市），亦可泛指东京都市圈 。东京是江户幕府的所在地，江户在庆应4年7月（1868年9月）改名为东京。</p>
+					</div>
+					<div id="wenzhi">
+						<p id="shyoukai2" style="text-indent:2em;">东京的著名观光景点有东京铁塔、皇居、东京国会议事堂、浅草寺、浜离宫、上野公园与动物园、葛西临海公园、台场与彩虹大桥、东京迪士尼乐园、代代木公园、日比谷公园、新宿御苑、幕张奥特莱斯（outlets）、奥多摩湖、Hellokitty乐园、明治神宫、忍野八海、池袋、上野公园、东映动漫Gallery、涩谷、升仙峡、丰田汽车会馆、筑地市场、千鸟之渊、秋叶原、二重桥、隅田公园、滨离宫庭园Tsukiji鱼市等。</p>
+					</div>
+				</div>
+			</div>
+			<div id="line1"></div>
+		</main>
+		<section class="lianjie">
+			<section class="lianjie_bigbox">
+				<section class="lianjie_box">
+					<div>
+						<h2>旅游资讯</h2>
+					</div>
+					<ul>
+						<li>
+							<a href="https://www.city.osaka.lg.jp/">大阪市:トップページ</a>
+						</li>
+						<li>
+							<a href="https://www.ana.co.jp/zh/cn/?cid=SEAbaiduchina_201708015601" target="_self">ANA官方/直飞日本 CNY1 900～</a>
+						</li>
+						<li>
+							<a href="https://www.visitokinawa.jp/?lang=zh-hans">冲绳旅游局 - VISIT OKINAWA JAPAN | 官方旅游观光信息</a>
+						</li>
+						<li>
+							<a href="http://www.jrhokkaido.co.jp/">JR北海道- Hokkaido Railway Company</a>
+						</li>
+						<li>
+							<a href="https://www.kyohaku.go.jp/eng/scn/index.html">京都国立博物館 | Kyoto National Museum</a>
+						</li>
+						<li>
+							<a href="https://www.tokyotower.co.jp/event/illumination/WinterFantasy2019/cn.html?b_scene_zt=1" target="_self">东京塔冬季梦幻～橙色・华灯～</a>
+						</li>
+					</ul>
+				</section>
+				<section class="lianjie_box">
+					<div>
+						<h2>Apps</h2>
+					</div>
+					<ul class="apps_ul">
+						<li>
+							<a href="javascript:void(0);">
+								<img src="biaoqian/logo_nhk.svg">
+							</a>
+						</li>
+					</ul>
+				</section>
+				<section class="lianjie_box">
+					<div>
+						<h2>把我们加为好友</h2>
+					</div>
+					<ul class="follow">
+						<li>
+							<a href="" target="_blank"><img src="biaoqian/ic_facebook.svg" alt=""></a>
+							<a href="" target="_blank"><img src="biaoqian/ic_twitter.svg" alt=""></a>
+							<a href="" target="_blank"><img src="biaoqian/icons-instagram.svg" alt=""></a>
+						</li>
+					</ul>
+					<div>
+						<p>*您将离开本网站</p>
+					</div>
+				</section>
+			</section>
+		</section>
+
+		<footer>
+			<div class="footer" align="center">
+				<div class="footer_main">
+					<div class="footer_left">
+						<span>
+							<p class="top1">关于我们</p>
+							<a href="" target="_blank" ga-location="首页" ga-type="按钮-关于我们" class="mt05">关于我们</a>
+							<a href="" target="_blank" ga-location="首页" ga-type="按钮-加入我们">加入我们</a>
+							<a href="" target="_blank" ga-location="首页" ga-type="按钮-媒体报道">媒体报道</a>
+							<a href="" target="_blank" ga-location="首页" ga-type="按钮-联系我们">联系我们</a>
+						</span>
+						<span>
+							<p class="top1">使用帮助</p>
+							<a href="" target="_blank" ga-location="首页" ga-type="按钮-帮助中心" class="mt05">帮助中心</a>
+							<a href="" target="_blank" ga-location="首页" ga-type="按钮-手机学习">手机学习</a>
+							<a href="" target="_blank" ga-location="首页" ga-type="按钮-使用协议">使用协议</a>
+							<a href="" target="_blank" ga-location="首页" ga-type="按钮-网站地图">网站地图</a>
+						</span>
+						<span>
+							<p class="top1">意见反馈</p>
+							<a href="#">合作邮箱：XXXXXXXXXXXXXX</a>
+							<a href="#">投诉邮箱：XXXXXXXXXXXXXX</a>
+							<a href="#">招聘邮箱：XXXXXXXXXXXXXX</a>
+						</span>
+					</div>
+					<div class="footer_right">
+						<span>
+							<a href="#">
+								<img src="logo/logo1.png">
+								APP
+							</a>
+						</span>
+						<span>
+							<a href="#">
+								<img src="logo/logo2.png">
+								客服
+							</a>
+						</span>
+						<span>
+							<a href="#">
+								<img src="logo/logo3.png">
+								微信
+							</a>
+						</span>
+						<span>
+							<a href="#">
+								<img src="logo/logo4.png">
+								微博
+							</a>
+						</span>
+						<span>
+							<a href="#">
+								<img src="logo/logo5.png">
+								认证
+							</a>
+						</span>
+						<div id="xuke">
+							<p>© Copyright 20XX-20XX XXXX 版权所有 ICP证：XXX-20XXXXXX<img src="logo/110.png">公网安备 XXXXXXXXXXXXXX号</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,290 @@
+body {
+				background-image: url(bodybg/bodybg3.jpg);
+				background-size: 100% 100%;
+			}
+/* mainjpg */
+#mainjpg{
+	width: 1400px;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	/* margin-top: -120px; */
+	z-index: 0;
+}
+#mainjpg img{
+	position: relative;
+	width: 1200px;
+	
+}
+#mainjpg a{
+	color: #E10000;
+	z-index: 2;
+	position: absolute;
+	opacity: 0.1;
+/* 隐藏地点 */
+}
+/* mainjpg */
+
+/* 地点 */
+#toukyou{
+	font-size: 17px;
+	right:640px;
+	top: 590px;
+}
+#kyouto{
+	font-size: 17px;
+	left:556px;
+	top: 616px;
+}
+#hokkaidou{
+	font-size: 39px;
+	left:840px;
+	top: 140px;
+}
+#okinawa{
+	font-size: 22px;
+	right:226px;
+	top: 720px;	
+}
+/* 地点 */
+
+/* 地点点击事件 */
+#ddjianjie{
+	display: flex;
+	justify-content: center;
+}
+#ddjianjie{
+	text-align: center;
+}
+#didianjianjiejpg ,#didianjianjiejpg1,#didianjianjiejpg2{
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 400px;
+	height: 200px;
+}
+#didianjianjiejpg img,#didianjianjiejpg1 img,#didianjianjiejpg2 img{
+	width: 400px;
+	height: 200px;
+}
+#logojpg{
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	/* background-image: url(biankuang/duihuakuang.gif); */
+	width: 400px;
+	height: 200px;
+}
+#logojpg img{
+	margin-top: 10px;
+	width: 270px;
+	height: 180px;
+}
+/* 地点点击事件 */
+
+
+
+#jianjie{
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+}
+#wenzhibg{
+	width: 1000px;
+	height: 430px;
+	background-image: url(biankuang/bk.gif);
+/* 	display: flex;
+	justify-content: center; */
+	
+}
+#wenzhi{
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 60px;
+}
+#shyoukai1{
+	color: whitesmoke;
+	font-size: 27px;
+}
+#shyoukai2{
+	color: whitesmoke;
+	font-size: 22px;
+}
+
+
+#wenzhi11{
+	font-size: 21px;
+}
+
+
+.lianjie {
+    max-width: 1200px;
+    margin: 0 auto;
+	height: 300px;
+}
+.lianjie_bigbox {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+.lianjie_box {
+    display: table-cell;
+    box-sizing: border-box;
+    width: calc(100%/3);
+    padding: 1.25em 1.5em 3.75em;
+    border-right: 1px solid #d8d8d8;
+}
+.follow li img{
+    width: 72px;
+}
+.apps_ul li a img{
+	 width: 72px;
+}
+/* 概况简介 */
+#tdf{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: center;
+}
+#tdfjianjie{
+	width: 900px;
+	height: 300px;
+	background-image:url(biankuang/bk.gif);
+	background-size: 900px 300px;
+}
+#tdfjianjie h2{
+	margin-top: 10px;
+	color: whitesmoke;
+}
+#tdfjianjie div{
+	margin-left: 60px;
+	margin-right: 120px;
+	margin-top: -10px;
+}
+#tdfjianjie{
+	margin-right: 20px;
+}
+#tdfjianjie p{
+	color: whitesmoke;
+}
+
+#tdfimg img{
+	width: 300px;
+}
+#tdfimg:hover{
+	transform:translateX(0) translateY(140px) scale(2.0,2.0);
+	opacity: 0.8;
+}
+/* 概况 */
+#gaikuang{
+	display: flex;
+	justify-content: flex-start;
+	width: 1270px;
+	z-index: 1;
+	background-image: url(bodybg/bg7.jpg);
+	border-radius: 5px;
+}
+#gaikuang_chihou_ul li{
+	    width: 240px;
+	    height: 45px;
+	    line-height: 45px;
+	    background: #eee;
+	    color: #666;
+	    text-align: center;
+	    cursor: pointer;
+}
+#gaikuang_chihou_ul li.active{
+   color: #fff;
+   font-weight: 700;
+   background-color: #39C5BB;
+}
+.chihou{
+	width: 1000px;
+	height: 400px;
+}
+.chihou p{
+	margin-top: 40px;
+	margin-left: 50px;
+	text-indent:2em;
+	text-align: left;
+}
+.chihou ul{
+	width: 1024px;
+	/*   margin: 35px auto 18px; */
+	border-bottom: 3px solid #86c138;
+	overflow: hidden;
+}
+.chihou .chihou-zenbu {
+    width: 1024px;
+    border-bottom: 3px solid #86c138;
+    overflow: hidden;
+}
+.chihou .chihou-zenbu li {
+    width: 140px;
+    height: 45px;
+	line-height: 45px;
+    float: left;
+    margin-right: 5px;
+   background: #eee;
+    color: #666;
+   text-align: center;
+    cursor: pointer;
+}
+#chihou1{
+	
+	display: none;
+	/* display: block; */
+}
+#chihou2{
+	display: none;
+	/* display: block; */
+}
+#chihou3{
+	display: none;
+	/* display: block; */
+}
+#chihou4{
+	display: none;
+	/* display: block; */
+}
+#chihou5{
+	/* display: none; */
+	display: block;
+}
+#chihou6{
+	display: none;
+	/* display: block; */
+}
+#chihou7{
+	display: none;
+	/* display: block; */
+}
+#chihou8{
+	display: none;
+	/* display: block; */
+}
+
+.chihou-zenbu li.on{
+   color: #fff;
+   font-weight: 700;
+   background-color: #86c138;
+}
+.chihou{
+	text-align: left;
+	font-size:26px; 
+}
+/* 概况 */
+
+
+
+
+
+
+
+
+
+
+
